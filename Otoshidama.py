@@ -8,7 +8,5 @@ for n1 in range(n+1):
         continue
     break
 else:
-    n1=-1
-    n2=-1
-    n3=-1
+    n1=n2=n3=-1
 print(n1,n2,n3)

@@ -1,14 +1,8 @@
+import numpy as np
 n=input()
-a=list(map(int,input().split()))
-s=0
-while True:
-    for i,ai in enumerate(a):
-        if ai%2==1:
-            print(s)
-            break
-        else:
-            a[i]=ai/2
-    else:
-        s+=1
-        continue
-    break
+a=np.array(list(map(int,input().split())))
+t=0
+while all(a%2==0):
+    a//=2
+    t+=1
+print(t)

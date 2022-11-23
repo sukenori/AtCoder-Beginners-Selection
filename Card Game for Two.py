@@ -1,10 +1,3 @@
 n=int(input())
-a=list(map(int,input().split()))
-a.sort(reverse=True)
-alice=0
-bob=0
-for i in range(0,n,2):
-    alice+=a[i]
-    if i<n-1:
-        bob+=a[i+1]
-print(alice-bob)
+a=sorted(list(map(int,input().split())),reverse=True)
+print(sum(a[0::2])-sum(a[1::2]))

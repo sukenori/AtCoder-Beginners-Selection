@@ -1,4 +1,4 @@
 a=int(input())
-bc=input().split()
+b,c=map(int,input().split())
 s=input()
-print(str(a+int(bc[0])+int(bc[1]))+" "+s)
+print(a+b+c,s)
